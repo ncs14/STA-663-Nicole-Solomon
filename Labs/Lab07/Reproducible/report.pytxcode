@@ -1,0 +1,32 @@
+=>PYTHONTEX#sympy#default#default#0#code#####6#
+from sympy.stats import DiscreteUniform, sample
+x = Symbol(’x’)
+a = DiscreteUniform(’a’, range(-10, 11))
+b = DiscreteUniform(’b’, range(-10, 11))
+c = DiscreteUniform(’c’, range(-10, 11))
+def randquad():
+return Eq(sample(a)*x**2 + sample(b)*x + sample(c))
+=>PYTHONTEX:SETTINGS#
+version=v0.12
+outputdir=pythontex-files-report
+workingdir=pythontex-files-report
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python|
+pygfamily=pylabcon|pycon|
